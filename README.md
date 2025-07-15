@@ -30,127 +30,22 @@ O banco de dados utilizado é o MySQL/MariaDB, que está sendo executado localme
 Fluxo de Exemplo: Cadastro de Produto
 Para ilustrar a integração entre as camadas, considere o processo de cadastro de um novo produto:
 
-O usuário preenche um formulário no frontend (HTML, CSS, JavaScript).
+- O usuário preenche um formulário no frontend (HTML, CSS, JavaScript).
 
-O JavaScript no frontend envia os dados do formulário para o backend via uma requisição POST para o endpoint /produtos.
+- O JavaScript no frontend envia os dados do formulário para o backend via uma requisição POST para o endpoint /produtos.
 
-O backend (Node.js com Express), ao receber essa requisição, valida os dados do novo produto.
+- O backend (Node.js com Express), ao receber essa requisição, valida os dados do novo produto.
 
-Em seguida, o backend utiliza o Prisma para construir e executar a operação de inserção no banco de dados MySQL/MariaDB.
+- Em seguida, o backend utiliza o Prisma para construir e executar a operação de inserção no banco de dados MySQL/MariaDB.
 
-Após a inserção bem-sucedida, o banco de dados retorna uma confirmação ao backend.
+- Após a inserção bem-sucedida, o banco de dados retorna uma confirmação ao backend.
 
-O backend, por sua vez, envia uma resposta ao frontend (por exemplo, um status 201 Created e os dados do novo produto).
+- O backend, por sua vez, envia uma resposta ao frontend (por exemplo, um status 201 Created e os dados do novo produto).
 
-Assim, o usuário recebe uma mensagem de sucesso na interface e pode visualizar o novo produto cadastrado, demonstrando a integração eficiente e fluida entre todas as camadas do sistema.
+- Assim, o usuário recebe uma mensagem de sucesso na interface e pode visualizar o novo produto cadastrado, demonstrando a integração eficiente e fluida entre todas as camadas do sistema.
 
-👤 Desenvolvedor
-Gabriela Helena (Projeto individual)
 
-🎯 Objetivos do Projeto
-Criar uma solução prática e acessível que otimize a gestão de PMEs.
 
-Reduzir tarefas manuais e melhorar o fluxo de informações empresariais.
-
-Utilizar práticas de desenvolvimento ágil, especialmente o Scrum.
-
-Demonstrar a capacidade técnica no desenvolvimento Web, Mobile e Back-end.
-
-Elaborar documentação conforme as normas da ABNT.
-
-⚙️ Metodologia Utilizada
-Metodologia Ágil: Scrum
-
-Papéis no projeto:
-
-Product Owner: Gabriela Helena
-
-Scrum Master: Gabriela Helena
-
-Dev Team: Gabriela Helena
-
-Como o projeto é individual, todos os papéis do Scrum foram adaptados à realidade de um desenvolvedor atuando sozinho.
-
-🧩 Planejamento e Modelagem
-✅ Business Model Canvas
-
-✅ Proposta inicial do projeto
-
-✅ Cronograma (Gráfico de Gantt)
-
-✅ Requisitos funcionais e casos de uso (DCU)
-
-✅ Modelagem de banco de dados (MER e DER)
-
-✅ Diagrama de classes (Back-end)
-
-🗂 Estrutura de Repositórios
-Módulo
-
-Repositório
-
-Repositório Principal
-
-NexoERP
-
-Front-end
-
-NexoERP - Frontend
-
-Back-end
-
-NexoERP - Backend
-
-⚠️ Todos os repositórios são sincronizados com o principal.
-
-📄 Documentação do Projeto
-A documentação técnica está disponível na pasta ./docs, incluindo:
-
-Diagramas UML (Casos de Uso, Classes, MER, DER)
-
-Prototipação (Wireframes)
-
-Planejamento estratégico (Canvas, Gantt)
-
-Requisitos e histórico do projeto
-
-📌 Backlog Geral
-[x] Definir metodologia ágil (Scrum)
-
-[x] Estabelecer escopo e requisitos iniciais
-
-[x] Modelar o negócio com Canvas
-
-[x] Criar estrutura de repositórios
-
-[x] Elaborar documentação técnica (ABNT)
-
-[x] Definir cronograma com Gantt
-
-[x] Finalizar protótipo funcional
-
-[x] Validar requisitos com DCU
-
-[x] Concluir modelagem MER e DER
-
-[x] Diagramar estrutura do back-end
-
-[x] Iniciar o desenvolvimento do sistema
-
-🔄 Backlog da Sprint Atual
-[x] Criar repositórios e adicionar links
-
-[x] Submeter repositório via formulário
-
-[x] Prototipar interface funcional
-
-[x] Identificar requisitos principais
-
-[x] Finalizar casos de uso (DCU)
-
-[x] Finalizar modelagem MER e DER
-
-[x] Iniciar estruturação do back-end
 
 🚀 Como Rodar o Projeto
 Este projeto utiliza uma arquitetura em camadas com frontend em HTML, CSS e JavaScript, backend em Node.js com Express e Prisma ORM, e banco de dados MySQL/MariaDB via XAMPP. Para configurar e executar o projeto localmente, siga os passos abaixo:
