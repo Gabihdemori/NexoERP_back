@@ -56,22 +56,6 @@ npm install
 npx prisma migrate dev
 npm run dev
 ```
-cd NexoERP_end # Ou o nome da pasta do seu backend
-npm install
-
-Configure o banco de dados: Certifique-se de que o XAMPP esteja em execução e que o MySQL/MariaDB esteja ativo. O Prisma utilizará as configurações de conexão definidas no seu arquivo .env (certifique-se de que ele esteja configurado corretamente para o seu ambiente local).
-
-Execute as migrações do Prisma: Isso criará as tabelas no seu banco de dados com base no seu schema Prisma.
-
-npx prisma migrate dev --name init
-
-Inicie o servidor backend:
-
-npm run dev
-
-O backend estará rodando em http://localhost:3000 (ou a porta configurada no seu projeto).
-
-Abra o frontend: Abra os arquivos HTML do seu frontend diretamente no navegador ou configure um servidor local para servi-los, se necessário.
 
 ## 📬 Contato
 
