@@ -1,0 +1,82 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum Perfil {
+  ADMIN
+  USER
+}
+
+model Usuario {
+  id           Int        @id @default(autoincrement())
+  nome         String
+  email        String     @unique
+  senha        String
+  perfil       Perfil     @default(USER)
+  clientes     Cliente[]
+  vendas       Venda[]
+  criadoEm     DateTime   @default(now())
+  atualizadoEm DateTime   @updatedAt
+}
+
+model Cliente {
+  id           Int        @id @default(autoincrement())
+  nome         String
+  email        String     @unique
+  telefone     String
+  cpf          String     @unique
+  endereco     String?
+  cnpj         String?
+  usuarioId    Int
+  usuario      Usuario    @relation(fields: [usuarioId], references: [id])
+  vendas       Venda[]
+  criadoEm     DateTime   @default(now())
+  atualizadoEm DateTime   @updatedAt
+}
+
+model Produto {
+  id           Int        @id @default(autoincrement())
+  nome         String
+  descricao    String?
+  preco        Float
+  estoque      Int
+  itensVenda   ItemVenda[]
+  criadoEm     DateTime   @default(now())
+  atualizadoEm DateTime   @updatedAt
+}
+
+model Venda {
+  id           Int        @id @default(autoincrement())
+  clienteId    Int
+  usuarioId    Int
+  data         DateTime   @default(now())
+  total        Float
+  itens        ItemVenda[]
+  cliente      Cliente    @relation(fields: [clienteId], references: [id])
+  usuario      Usuario    @relation(fields: [usuarioId], references: [id])
+  relatorio    RelatorioVenda?
+}
+
+model ItemVenda {
+  id           Int        @id @default(autoincrement())
+  vendaId      Int
+  produtoId    Int
+  quantidade   Int
+  precoUnit    Float
+  venda        Venda      @relation(fields: [vendaId], references: [id])
+  produto      Produto    @relation(fields: [produtoId], references: [id])
+}
+
+model RelatorioVenda {
+  id             Int        @id @default(autoincrement())
+  vendaId        Int        @unique
+  dataRelatorio  DateTime   @default(now())
+  observacoes    String?
+  venda          Venda      @relation(fields: [vendaId], references: [id])
+}

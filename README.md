@@ -15,8 +15,7 @@ A proposta nasce da necessidade de soluções acessíveis e eficientes que melho
 git clone https://github.com/Gabihdemori/NexoERP_end.git
 cd api
 npm install
-npx prisma migrate dev
-npm run dev
+npm start
 ```
 
 ## 📬 Contato
