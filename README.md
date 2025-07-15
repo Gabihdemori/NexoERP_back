@@ -5,21 +5,21 @@ Trata-se do desenvolvimento de um sistema ERP simplificado, projetado especialme
 
 A proposta nasce da necessidade de soluções acessíveis e eficientes que melhorem a gestão empresarial sem a complexidade ou os custos dos ERPs tradicionais. O sistema permite a administração integrada de usuários, clientes, produtos, vendas, estoque e relatórios.
 
-##⚙️ Arquitetura e Tecnologias
+## ⚙️ Arquitetura e Tecnologias
 
-- O sistema foi desenvolvido com uma arquitetura em camadas, onde cada tecnologia desempenha um papel fundamental na comunicação e funcionamento geral da aplicação, garantindo robustez e escalabilidade.
+ O sistema foi desenvolvido com uma arquitetura em camadas, onde cada tecnologia desempenha um papel fundamental na comunicação e funcionamento geral da aplicação, garantindo robustez e escalabilidade.
 
 ## Backend
 
-- Quando o usuário realiza uma ação, como o cadastro de um produto, o frontend envia uma requisição HTTP (por exemplo, um POST) para o backend. O backend foi construído utilizando Node.js e o framework Express. Ele é responsável por:
+Quando o usuário realiza uma ação, como o cadastro de um produto, o frontend envia uma requisição HTTP (por exemplo, um POST) para o backend. O backend foi construído utilizando Node.js e o framework Express. Ele é responsável por:
 
--- Receber e rotear as requisições HTTP.
+- Receber e rotear as requisições HTTP.
 
--- Processar as regras de negócio da aplicação.
+- Processar as regras de negócio da aplicação.
 
--- Validar os dados recebidos para garantir a integridade.
+- Validar os dados recebidos para garantir a integridade.
 
--- Interagir com o banco de dados através do ORM.
+- Interagir com o banco de dados através do ORM.
 
 ## ORM (Object-Relational Mapping)
 Para a interação com o banco de dados, utilizamos o Prisma como ORM. O Prisma atua como uma camada de abstração, convertendo as operações do backend em comandos SQL, garantindo que os dados sejam manipulados de forma segura e eficiente, e facilitando o desenvolvimento e a manutenção do código.
