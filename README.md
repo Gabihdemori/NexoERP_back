@@ -6,10 +6,12 @@ Trata-se do desenvolvimento de um sistema ERP simplificado, projetado especialme
 A proposta nasce da necessidade de soluções acessíveis e eficientes que melhorem a gestão empresarial sem a complexidade ou os custos dos ERPs tradicionais. O sistema permite a administração integrada de usuários, clientes, produtos, vendas, estoque e relatórios.
 
 ##⚙️ Arquitetura e Tecnologias
--- O sistema foi desenvolvido com uma arquitetura em camadas, onde cada tecnologia desempenha um papel fundamental na comunicação e funcionamento geral da aplicação, garantindo robustez e escalabilidade.
+
+- O sistema foi desenvolvido com uma arquitetura em camadas, onde cada tecnologia desempenha um papel fundamental na comunicação e funcionamento geral da aplicação, garantindo robustez e escalabilidade.
 
 ## Backend
--- Quando o usuário realiza uma ação, como o cadastro de um produto, o frontend envia uma requisição HTTP (por exemplo, um POST) para o backend. O backend foi construído utilizando Node.js e o framework Express. Ele é responsável por:
+
+- Quando o usuário realiza uma ação, como o cadastro de um produto, o frontend envia uma requisição HTTP (por exemplo, um POST) para o backend. O backend foi construído utilizando Node.js e o framework Express. Ele é responsável por:
 
 -- Receber e rotear as requisições HTTP.
 
