@@ -47,15 +47,15 @@ Para ilustrar a integração entre as camadas, considere o processo de cadastro 
 
 
 
-🚀 Como Rodar o Projeto
-Este projeto utiliza uma arquitetura em camadas com frontend em HTML, CSS e JavaScript, backend em Node.js com Express e Prisma ORM, e banco de dados MySQL/MariaDB via XAMPP. Para configurar e executar o projeto localmente, siga os passos abaixo:
+## 🚀 Como Rodar o Projeto
 
-Clone o repositório:
-
-git clone [URL_DO_SEU_REPOSITORIO]
-
-Instale as dependências: Navegue até a pasta do backend e instale as dependências Node.js.
-
+```bash
+git clone https://github.com/Gabihdemori/NexoERP_end.git
+cd api
+npm install
+npx prisma migrate dev
+npm run dev
+```
 cd NexoERP_end # Ou o nome da pasta do seu backend
 npm install
 
@@ -73,12 +73,13 @@ O backend estará rodando em http://localhost:3000 (ou a porta configurada no se
 
 Abra o frontend: Abra os arquivos HTML do seu frontend diretamente no navegador ou configure um servidor local para servi-los, se necessário.
 
-📬 Contato
+## 📬 Contato
+
 Caso deseje entrar em contato para fins acadêmicos, colaborações ou feedbacks:
+- **Gabriela Helena**
+- GitHub: [@Gabihdemori](https://github.com/Gabihdemori)
 
-Gabriela Helena
+---
 
-GitHub: @Gabihdemori
-
-📝 Projeto acadêmico desenvolvido como parte do curso Técnico em Desenvolvimento de Sistemas – SENAI
+📝 Projeto acadêmico desenvolvido como parte do curso Técnico em Desenvolvimento de Sistemas – SENAI  
 📍 Tema: Aplicação prática de metodologias ágeis no contexto de pequenas e médias empresas
